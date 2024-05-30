@@ -59,10 +59,16 @@ body{
 }
 @media (max-width:1000px) {
     .contactBoxes{
-        flex-direction: column;
+        display: block;
         margin-top: 50px;
     }
     .contactBox{
-        margin-bottom: 70px;
+        width: 400px;
+        height: 300px;
+        margin: 70px auto;
+    }
+    .contactBox>.top{
+        height: 300px;
+        font-size: 35px;
     }
 }
