@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 500px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactBoxes{
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
+    align-items: baseline;
+}
+.contactBox{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: cornsilk;
+    box-shadow: 1px 1px 1px lightgrey , -1px -1px 1px lightgrey;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 30px
+}
+.contactBox>.top{
+    background-color: darkcyan;
+    width: 100%;
+    position: absolute;
+    height: 200px;
+    bottom: 0;
+    z-index: 1;
+    transition: all .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.contactBox>.info{
+    background-color: dodgerblue;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.contactBox:hover>.top{
+    bottom: 50px;
+}
+@media (max-width:768px) {
+    .contactBoxes{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .contactBox{
+        margin-bottom: 70px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    .contactBox{
+        width: 220px;
+    }
+}
