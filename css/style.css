@@ -57,17 +57,12 @@ body{
 .contactBox:hover>.top{
     bottom: 50px;
 }
-@media (max-width:768px) {
+@media (max-width:1000px) {
     .contactBoxes{
         flex-direction: column;
         margin-top: 50px;
     }
     .contactBox{
         margin-bottom: 70px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1200px){
-    .contactBox{
-        width: 220px;
     }
 }
